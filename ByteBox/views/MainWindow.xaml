@@ -1,0 +1,53 @@
+﻿<Window x:Class="ByteBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ByteBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1600">
+    <Grid Background="#ECECEC">
+        <Ellipse
+            Fill="#F5F5F5" HorizontalAlignment="Left" Height="1027"
+            Margin="-1060,-456,-149.4,0" VerticalAlignment="Top" Width="2803" />
+        <Ellipse
+            Fill="White" HorizontalAlignment="Left" Height="746"
+            Margin="-1060,-456,-149.4,0" VerticalAlignment="Top" Width="2803" />
+        <Border
+            Padding="7" Background="White" Width="400" Height="60"
+            BorderBrush="#707070" BorderThickness="3" CornerRadius="8">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Foreground="#4D4D4D" FontSize="28" Width="35"><Bold><Run Text="K"/></Bold></TextBlock>
+                <PasswordBox Name="pbPass"
+                    HorizontalContentAlignment="Center" FontSize="20" Background="Transparent"
+                    Padding="2" BorderThickness="0" Width="343"/>
+            </StackPanel>
+        </Border>
+        <TextBlock
+            Foreground="#707070" FontSize="60"
+            Margin="674,153,696.6,536.4">
+            ByteBox
+        </TextBlock>
+        <TextBlock
+            FontSize="20" HorizontalAlignment="Left" Margin="730,590,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Name="tbPath">
+        </TextBlock>
+        <Button Click="load" Foreground="#4D4D4D" FontSize="20" Background="#FFBA31" BorderThickness="0" HorizontalAlignment="Left" Height="60" Margin="597,470,0,0" VerticalAlignment="Top" Width="400">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30" />
+                </Style>
+            </Button.Resources>
+            <Bold>Decrypt</Bold>
+        </Button>
+        <Button Background="Transparent" FontSize="18" HorizontalAlignment="Left" Margin="731,646,0,0" VerticalAlignment="Top" Width="145" Height="34" BorderThickness="2">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12" />
+                </Style>
+            </Button.Resources>
+            Change
+        </Button>
+        <Button Content="Test" Click="test" HorizontalAlignment="Left" Margin="1153,488,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="tbText" HorizontalAlignment="Left" Height="23" Margin="287,424,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
